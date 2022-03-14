@@ -28,6 +28,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseMiddleware<ExceptionHandlerMiddleware>();
+app.UseMiddleware<RequestResponseMiddleware>();
 
 app.UseHttpsRedirection();
 
